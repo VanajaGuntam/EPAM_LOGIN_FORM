@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+  text-align: center;
+}
+
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+  text-align: center;
+}
+.epam {
+  background-color: #ccff33;
+  color: white;
+  text-align:center;
+}
+
+
+/* style the submit button */
+input[type=submit] {
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.row {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.hl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+.hl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+
+.hide-md-lg {
+  display: none;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 10px 5px 4px 4px;
+}
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  .hl {
+    display: none;
+  }
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+    align :center;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="background-color:skyblue;text-align:center;font-color:white;">SIGN IN</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+ 
+      
+      <div class="col">
+        <div class="hide-md-lg">
+          
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="SIGNIN">
+      </div>
+<p>Forgot your password?</p> 
+<br>
+<p>Register!</p>
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> 
+         </a>
+        
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i>
+        </a>
+        <a href="#" class="epam btn">
+          <i class="fa fa-epam fa-fw"></i>EPAM LOGIN
+        </a>
+      </div>
+
+      
+      
+    </div>
+    </form>
+
+</div>
+
+</body>
+</html>
